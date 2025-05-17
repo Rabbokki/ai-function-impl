@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b11dab8-fba4-4e34-bea2-6eeaafc5ba1c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +160,8 @@
       <workItem from="1747269914493" duration="1048000" />
       <workItem from="1747271155673" duration="10019000" />
       <workItem from="1747357354258" duration="3766000" />
-      <workItem from="1747452544466" duration="1288000" />
+      <workItem from="1747452544466" duration="2374000" />
+      <workItem from="1747462138203" duration="687000" />
     </task>
     <servers />
   </component>
@@ -182,7 +182,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Ai_function_impl$main.coverage" NAME="main Coverage Results" MODIFIED="1747218658340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Ai_function_impl$openai_test.coverage" NAME="openai_test Coverage Results" MODIFIED="1747226727753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/travelling" />
-    <SUITE FILE_PATH="coverage/Ai_function_impl$FastAPI_Server.coverage" NAME="FastAPI Server Coverage Results" MODIFIED="1747452604679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/travelling" />
+    <SUITE FILE_PATH="coverage/Ai_function_impl$FastAPI_Server.coverage" NAME="FastAPI Server Coverage Results" MODIFIED="1747460659757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/travelling" />
     <SUITE FILE_PATH="coverage/Ai_function_impl$app.coverage" NAME="app Coverage Results" MODIFIED="1747226740359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/travelling" />
   </component>
 </project>
