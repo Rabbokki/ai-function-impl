@@ -204,7 +204,6 @@ logger = logging.getLogger(__name__)
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 API_KEY = os.getenv("API_KEY")
-ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000,https://travelling.p-e.kr").split(",")
 
 if not OPENAI_API_KEY:
     logger.error("OPENAI_API_KEY가 .env 파일에 설정되지 않았습니다.")
@@ -219,7 +218,7 @@ openai.api_key = OPENAI_API_KEY
 # Lifespan 이벤트 핸들러
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    logger.info("Starting FastAPI server on http://0.0.0.0:5000")
+    logger.info("Starting FastAPI server on http://0.0.0.0:8000")
     yield
     logger.info("Shutting down FastAPI server")
 
@@ -230,7 +229,7 @@ security = HTTPBearer()
 # CORS 설정
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,
+    allow_origins=["http://localhost:3000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -366,4 +365,4 @@ async def generate_itinerary(request: ItineraryRequest, api_key: str = Depends(v
         raise HTTPException(status_code=500, detail=f"서버 오류: {str(e)}")
 
 if __name__ == "__main__":
-    uvicorn.run("app:app", host="0.0.0.0", port=5000, reload=True)
+    uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
